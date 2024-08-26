@@ -16,14 +16,15 @@ app.listen(3000, function() {
     console.log("start! blog server is open!!")
 })
 
+let inherence_id = 1
+
 const BLOG_data = []
 
 app.post('/post', function(req, res) {  // 1. 게시물 업로드 기능
     const {title_data, content_data} = req.body
-    const id_data = BLOG_data.length
 
     BLOG_data.push({
-        id : id_data+1,
+        id : inherence_id++,
         title : title_data,
         content : content_data
     })
@@ -62,5 +63,19 @@ app.patch('/patch', function(req,res) { // 3. 게시물 수정 기능
     } else {
         res.status(404).send('NO data')
     }
+
+})
+
+app.delete('/delete', function(req, res) { // 4. 게시물 삭제 기능
+    const delete_id = parseInt(req.query.id)
+    const idx = BLOG_data.findIndex(idx => idx.id === delete_id)
+
+    if(idx) {
+        BLOG_data.splice(idx-1, 1);
+        res.status(200).send('Delete')
+    } else {
+        res.status(404).send('No data')
+    }
+
 
 })
