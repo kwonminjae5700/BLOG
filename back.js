@@ -37,8 +37,8 @@ app.get('/getAll', function(req, res) { // 2. 게시물 전체 읽기 기능
 })
 
 app.get('/getById', function(req, res) { // 2. ID 에 해당하는 게시물 읽기 기능
-    const id_data = parseInt(req.query.id)
-    const idx = BLOG_data.find(idx => idx.id === id_data)
+    const read_id = parseInt(req.query.id)
+    const idx = BLOG_data.find(idx => idx.id === read_id)
 
     if(idx) {
         res.json(idx)
