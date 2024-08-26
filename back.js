@@ -48,7 +48,19 @@ app.get('/getById', function(req, res) { // 2. ID 에 해당하는 게시물 읽
 })
 
 app.patch('/patch', function(req,res) { // 3. 게시물 수정 기능
-    const modify_id = req.body
+    const {modify_id, title_data, content_data} = req.body
+    const idx = BLOG_data.find(idx => idx.id === parseInt(modify_id))
 
+    if(idx) {
+        if(title_data && content_data) {    
+            idx.title = title_data
+            idx.content = content_data
+            res.status(200).json(idx)
+        } else {
+            res.status(404).send('Must need sentence')
+        }
+    } else {
+        res.status(404).send('NO data')
+    }
 
 })
