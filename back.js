@@ -70,12 +70,11 @@ app.delete('/delete', function(req, res) { // 4. 게시물 삭제 기능
     const delete_id = parseInt(req.query.id)
     const idx = BLOG_data.findIndex(idx => idx.id === delete_id)
 
-    if(idx) {
+    if(idx !== -1) {
         BLOG_data.splice(idx-1, 1);
         res.status(200).send('Delete')
     } else {
         res.status(404).send('No data')
     }
-
 
 })
