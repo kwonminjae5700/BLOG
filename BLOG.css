@@ -12,6 +12,11 @@ header {
     align-items : center;
 }
 
+a {
+    text-decoration: none;
+    color : white;
+}
+
 header > h1 {
     color : white;
     font-size : 2rem;
@@ -26,7 +31,7 @@ header > h1 {
 
 #write {
     width : 8vw;
-    height : 4.2vh;
+    height : 4.4vh;
     border : solid white 0.14rem;
     border-radius : 2rem;
     box-sizing : border-box;
