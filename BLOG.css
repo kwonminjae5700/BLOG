@@ -1,0 +1,61 @@
+body {
+    margin : 0;
+    background-color : #121212;
+}
+
+header {
+    width : 72vw;
+    height : 8vh;
+    margin : auto;
+    margin-bottom : auto;
+    display : flex;
+    align-items : center;
+}
+
+header > h1 {
+    color : white;
+    font-size : 2rem;
+    margin : 0;
+}
+
+#header_info {
+    margin-left : auto;
+    display : flex;
+    gap : 1.8vw;
+}
+
+#write {
+    width : 8vw;
+    height : 4.2vh;
+    border : solid white 0.14rem;
+    border-radius : 2rem;
+    box-sizing : border-box;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    font-size : 1.16rem;
+    color : white;
+    background-color : #121212;
+}
+
+#write:hover {
+    cursor : pointer;
+    background-color : white;
+    color : black;
+}
+
+#header_info img {
+    filter: invert(100%);
+}
+
+#header_info img:hover {
+    cursor : pointer;
+}
+
+main {
+    width : 72vw;
+    height : 92vh;
+    background-color : white;
+    margin : 0 auto;
+}
+
