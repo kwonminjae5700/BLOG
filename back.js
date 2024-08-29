@@ -8,9 +8,11 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
+const cors = require('cors')
 
-app.use(express.json()); 
-app.use(express.urlencoded({ extended: true }));
+app.use(cors())
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
 app.listen(3000, function() {
     console.log("start! blog server is open!!")
