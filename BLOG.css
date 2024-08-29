@@ -60,7 +60,64 @@ header > h1 {
 main {
     width : 72vw;
     height : 92vh;
-    background-color : white;
+    border-top : solid gray 0.14rem;
     margin : 0 auto;
 }
 
+.container {
+    width : 62vw;
+    height : 92vh;
+    background-color : #1e1e1e;
+    margin : 0 auto;
+}
+
+#postForm {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    margin-top : 3vh;
+    gap : 3vh;
+}
+
+input:focus {
+    outline : none;
+}
+
+textarea:focus {
+    outline : none;
+}
+
+#title {
+    width : 48vw;
+    height : 10vh;
+    font-size : 2.8rem;
+    color : #acacac;
+    font-weight : bold;
+    background-color : #1e1e1e;
+    border-width : 0;
+}
+
+#content {
+    width : 48vw;
+    height : 48vh;
+    font-size : 1.4rem;
+    color : #787878;
+    background-color : #1e1e1e;
+    border-width : 0;
+    resize : none;
+}
+
+form > button {
+    width : 8vw;
+    height : 6vh;
+    margin-top : 6vh;
+    margin-left : 45vw;
+    font-size : 1.3rem;
+    font-weight : bold;
+    border-radius : 0.4rem;
+    background-color : #95f2d7;
+}
+
+form > button:hover {
+    cursor : pointer;
+}
