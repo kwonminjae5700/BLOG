@@ -12,13 +12,22 @@
             <a href="index.html"><h1>BLOG</h1></a>
             <div id="header_info">
                 <img src="./picture/bell.png" width="30vw" height="30vh">
-                <img src="./picture/search.png" width="30vw" height="30vh">
+                <img src="./picture/delete.png" width="30vw" height="30vh">
                 <button id="write" onclick="location.href='writePage.html'">새 글 작성</button>
                 <img src="./picture/user.png" width="34vw" height="34vh">
             </div>
         </header>
         <main>
-
+            <div class="container">
+                <form id="postForm">
+                    <label for="title"></label>
+                    <input type="text" id="title" name="title" placeholder="제목을 입력하세요" required>
+                    <label for="content"></label>
+                    <textarea id="content" name="content" placeholder="당신의 이야기를 적어보세요" required></textarea>
+                    <button type="submit">출간하기</button>
+                </form>
+            </div>
         </main>
     </body>
+    <script src="front.js"></script>
 </html>
