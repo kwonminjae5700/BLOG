@@ -121,3 +121,21 @@ form > button {
 form > button:hover {
     cursor : pointer;
 }
+
+main {
+    width : 72vw;
+    height : 92vh;
+    border-top : solid gray 0.14rem;
+    margin : 0 auto;
+    padding : 4vh;
+    display: flex;
+    flex-wrap : wrap;
+    justify-content : space-between; /* 요소 간 간격 조절 */
+}
+
+.poster {
+    width : 22vw;
+    height : 46vh;
+    background-color : #2a2a2a;
+    margin-bottom : 4vh;
+}
