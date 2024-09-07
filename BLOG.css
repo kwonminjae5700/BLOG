@@ -138,4 +138,20 @@ main {
     height : 46vh;
     background-color : #2a2a2a;
     margin-bottom : 4vh;
+    padding-left : 10px;
+}
+
+.poster:hover {
+    transition : 0.5s;
+    transform : translateY(-10px);
+}
+
+.poster > h2 {
+    color : white;
+    font-size : 1.8rem;
+}
+
+.poster > p {
+    color : #c0c0c0;
+    font-size : 1rem;
 }

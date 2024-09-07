@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => { // Get API 연동
         if(posts.length > 0) {
             posterBox.innerHTML = posts.map(post => `
                 <div class="poster">
-                    <h1>${post.title}</h1>
+                    <h2>${post.title}</h2>
                     <p>${post.content}</p>
                 </div>
             `).join('')
