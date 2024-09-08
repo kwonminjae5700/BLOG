@@ -12,7 +12,7 @@ postForm.addEventListener('submit', async function(event) {
             headers : {
                 'Content-Type' : 'application/json'
             },
-            body : JSON.stringify({
+            body : JSON.stringify({ 
                 title_data : title,
                 content_data : content
             })
