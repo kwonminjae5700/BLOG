@@ -99,12 +99,23 @@ textarea:focus {
 
 #content {
     width : 48vw;
-    height : 48vh;
+    height : 40vh;
     font-size : 1.4rem;
     color : #787878;
     background-color : #1e1e1e;
     border-width : 0;
     resize : none;
+}
+
+#picture {
+    width : 80%;
+    height : 8vh;
+    background-color : #282828;
+    border-radius : 16px;
+    font-size : 1.2rem;
+    color : #787878;
+    border-width : 0;
+    padding-left : 20px;
 }
 
 form > button {
