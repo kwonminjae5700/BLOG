@@ -5,6 +5,7 @@ postForm.addEventListener('submit', async function(event) {
 
     const title = document.getElementById('title').value
     const content = document.getElementById('content').value
+    const picture = document.getElementById('picture').value
 
     try {
         const postResponse = await fetch('http://localhost:3000/post', {
@@ -14,7 +15,8 @@ postForm.addEventListener('submit', async function(event) {
             },
             body : JSON.stringify({ 
                 title_data : title,
-                content_data : content
+                content_data : content,
+                picture_data : picture
             })
         })
 
@@ -23,6 +25,7 @@ postForm.addEventListener('submit', async function(event) {
 
             document.getElementById('title').value = ''
             document.getElementById('content').value = ''
+            document.getElementById('picture').value = ''
 
             window.location.href = 'index.html'
         }
