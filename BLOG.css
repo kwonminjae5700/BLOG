@@ -138,7 +138,6 @@ main {
     height : 46vh;
     background-color : #2a2a2a;
     margin-bottom : 4vh;
-    padding-left : 10px;
 }
 
 .poster:hover {
@@ -149,9 +148,11 @@ main {
 .poster > h2 {
     color : white;
     font-size : 1.8rem;
+    margin-left : 10px;
 }
 
 .poster > p {
     color : #c0c0c0;
     font-size : 1rem;
+    margin-left : 10px;
 }
