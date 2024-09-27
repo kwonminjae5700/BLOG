@@ -29,7 +29,6 @@ app.post('/post', function(req, res) {  // 1. 게시물 업로드 기능
         id : inherence_id++,
         title : title_data,
         content : content_data,
-        picture : picture_data,
     })
 
     res.status(200).send('Upload is done!')
